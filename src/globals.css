@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --vh: 100vh;
+  --fc1: 0 0 0;
+  --fc2: ;
+  --bc1: 255 255 255;
+  --bc2: ;
+  --mc1: ;
+  --mc2: ;
+  /* --heading-large: 3.4rem; */
+  --heading-large: clamp(3.4rem, 14vw, 10rem);
+  --heading-medium: 1.4rem;
+  --heading-small: 1rem;
+  --main-text: 0.8;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 75rem;
+  margin: auto;
+  height: 100%;
+}

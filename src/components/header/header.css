@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 4rem;
+}
+
+.container__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container__header p {
+  font-weight: 600;
+  font-size: var(--heading-small);
+}
+
+.container__header svg {
+  height: 70%;
+  width: auto;
+}

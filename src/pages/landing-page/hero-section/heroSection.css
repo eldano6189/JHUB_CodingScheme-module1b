@@ -1,0 +1,25 @@
+.hero-section {
+  height: calc(100vh - 4rem);
+  min-height: 40rem;
+}
+
+.container__hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container__hero h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--heading-medium);
+  text-align: center;
+  text-shadow: 0.05em 0.04em 0.1em rgb(var(--fc1) / 0.2);
+}
+
+.container__hero h1 span {
+  font-size: var(--heading-large);
+  font-weight: 200;
+}
