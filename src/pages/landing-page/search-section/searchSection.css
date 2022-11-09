@@ -1,3 +1,7 @@
+.search-section {
+  background-color: rgb(var(--bc1) / 0.98);
+}
+
 .container__search {
   padding: 2rem 0;
   height: auto;
@@ -15,11 +19,12 @@
   text-align: center;
   text-shadow: 0.05em 0.04em 0.1em rgb(var(--fc1) / 0.2);
   padding: 1em 1em;
+  color: rgb(var(--fc1));
 }
 
 .container__countysearch {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   width: 100%;
   padding: 1em;
@@ -30,9 +35,10 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   padding: 1em;
-  border: 1px solid rgb(var(--fc1) / 0.2);
+  border: 1px solid rgb(var(--fc1) / 0.05);
+  box-shadow: rgb(var(--fc1) / 0.05) 4px 4px 5px;
 }
 
 .container__input > * {
@@ -40,17 +46,90 @@
 }
 
 .container__input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(var(--fc1));
   font-size: var(--header-medium);
   padding: 0.5em;
   width: 100%;
+  color: rgb(var(--fc1));
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.container__input input:focus {
+  border: none;
+  border-bottom: 1px solid rgb(var(--mc1));
+}
+
+.container__input p {
+  font-size: var(--main-text);
+  color: rgb(var(--fc1));
 }
 
 .container__results {
   width: 100%;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 2rem;
   min-height: 350px;
-  border: 1px solid rgb(var(--fc1) / 0.2);
+}
+
+.container__results h3 {
+  padding-bottom: 1em;
+  font-size: var(--heading-small);
+  text-transform: uppercase;
+  color: rgb(var(--fc1));
+}
+
+.container__results-map svg {
+  width: 100%;
+  height: auto;
+}
+
+.warning {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid rgb(var(--fc1) / 0.05);
+  box-shadow: rgb(var(--fc1) / 0.05) 4px 4px 5px;
+}
+
+.warning__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  aspect-ratio: 1 / 1;
+}
+
+.warning__icon svg {
+  width: 90%;
+}
+
+.warning__text {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.warning__text > * {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.warning__text-location h2 {
+  font-size: var(--heading-small);
+  padding: 0;
+  text-align: start;
+  padding: 0.2em 0;
+  color: rgb(var(--fc1));
+}
+
+.warning__text-time p {
+  font-size: var(--main-text);
+  padding: 0.2em 0;
+  color: rgb(var(--fc1));
 }
 
 @media (min-width: 800px) {

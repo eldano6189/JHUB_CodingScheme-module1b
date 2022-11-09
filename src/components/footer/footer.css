@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(var(--bc1));
+}
+
+.container__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container__footer-name p {
+  font-size: var(--main-text);
+  color: rgb(var(--fc1));
+}

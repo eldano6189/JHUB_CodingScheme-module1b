@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   height: 4rem;
+  background-color: rgb(var(--bc1));
 }
 
 .container__header {
@@ -13,6 +14,7 @@
 .container__header p {
   font-weight: 600;
   font-size: var(--heading-small);
+  color: rgb(var(--fc1));
 }
 
 .container__header svg {

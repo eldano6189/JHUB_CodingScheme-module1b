@@ -1,6 +1,7 @@
 .info-section {
   height: auto;
   padding: 2rem 0;
+  background-color: rgb(var(--bc1));
 }
 
 .container__info {
@@ -15,6 +16,7 @@
   text-align: center;
   text-shadow: 0.05em 0.04em 0.1em rgb(var(--fc1) / 0.2);
   padding: 1em 1em;
+  color: rgb(var(--fc1));
 }
 
 .container__cards {
@@ -31,7 +33,8 @@
   max-width: 350px;
   padding: 1em;
   margin: 1em;
-  border: 1px solid rgb(var(--fc1) / 0.2);
+  border: 1px solid rgb(var(--fc1) / 0.05);
+  box-shadow: rgb(var(--fc1) / 0.05) 4px 4px 5px;
 }
 
 .card__head {
@@ -56,10 +59,12 @@
 
 .card__head-text h3 {
   font-size: var(--heading-medium);
+  color: rgb(var(--fc1));
 }
 
 .card__head-text p {
   font-size: var(--heading-small);
+  color: rgb(var(--fc1));
 }
 
 .card__body-item {
@@ -69,4 +74,5 @@
 
 .card__body-item p {
   font-size: var(--main-text);
+  color: rgb(var(--fc1));
 }

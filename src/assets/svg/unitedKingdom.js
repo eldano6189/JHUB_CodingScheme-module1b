@@ -1,6 +1,6 @@
 import { Counties } from "../../data/counties";
 
-const UnitedKingdom = () => {
+const UnitedKingdom = ({ search }) => {
   return (
     <svg
       width="350"
@@ -10,7 +10,17 @@ const UnitedKingdom = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       {Counties.map((county, index) => {
-        return <path d={county.path} key={index} fill="black" />;
+        return (
+          <path
+            d={county.path}
+            key={index}
+            fill={
+              county.county.includes(search.toLowerCase())
+                ? "rgb(var(--mc1))"
+                : "rgb(var(--fc1))"
+            }
+          />
+        );
       })}
     </svg>
   );

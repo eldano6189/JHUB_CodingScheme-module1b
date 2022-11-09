@@ -4,22 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
 
 :root {
   --vh: 100vh;
-  --fc1: 0 0 0;
-  --fc2: ;
-  --bc1: 255 255 255;
-  --bc2: ;
-  --mc1: ;
-  --mc2: ;
-  /* --heading-large: 3.4rem; */
+  --fc1: 240 240 240;
+  --bc1: 10 10 10;
+  --mc1: 255 0 0;
   --heading-large: clamp(3.4rem, 14vw, 10rem);
   --heading-medium: 1.4rem;
   --heading-small: 1rem;
-  --main-text: 0.8;
+  --main-text: 0.875rem;
 }
 
 li,
@@ -33,4 +30,5 @@ a {
   max-width: 75rem;
   margin: auto;
   height: 100%;
+  padding: 0 1vw;
 }
